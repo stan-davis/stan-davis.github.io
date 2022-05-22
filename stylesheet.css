@@ -1,15 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
 
+:root
+{
+    --body-col: #ffffff;
+    --bg-col: #ececec;
+    --font-col: #424242;
+    --hover-col: #b3b3b3;
+}
+
+.dark-mode
+{
+    --body-col: #0f0f0f;
+    --bg-col: #1f1f1f;
+    --font-col: #eeeeee;
+    --hover-col: #a3a3a3;
+}
+
 body
 {
+    background-color: var(--body-col);
     margin: 2.5em;
+}
+
+#dark-mode-toggle
+{
+    float: right;
 }
 
 #wrapper
 {
     font-family: 'Roboto', sans-serif;
-    color: #424242;
-    background-color: #ececec;
+    color: var(--font-col);
+    background-color: var(--bg-col);
     border-radius: 0.5em;
     padding: 2em;
     margin: 0 auto;
@@ -17,22 +39,32 @@ body
     min-width: 350px;
 }
 
-#header
+#header a
 {
-    display: inline-block;
+    color: var(--font-col);
+}
+
+#header a:hover
+{
+    color: var(--hover-col);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 #links
 {
     border-top: 1px solid;
-    border-color: #b3b3b3;
+    border-color: var(--hover-col);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
 #links a
 {
-    color: #424242;
+    color: var(--font-col);
     font-weight: bold;
     text-decoration: none;
     padding-right: 0.2em;
@@ -40,7 +72,7 @@ body
 
 #links a:hover
 {
-    color: #b3b3b3;
+    color: var(--hover-col);
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -51,7 +83,7 @@ body
 #portfolio
 {
     border-top: 1px solid;
-    border-color: #b3b3b3;
+    border-color: var(--hover-col);
 }
 
 #article-container
@@ -71,14 +103,14 @@ article
 
 #article-container a
 {
-    color: #424242;
+    color: var(--font-col);
     font-weight: bold;
     text-decoration: none;
 }
 
 #article-container a:hover
 {
-    color: #b3b3b3;
+    color: var(--hover-col);
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -95,7 +127,7 @@ article img
 #contact
 {
     border-top: 1px solid;
-    border-color: #b3b3b3;
+    border-color: var(--hover-col);
 }
 
 #contact img
@@ -106,7 +138,7 @@ article img
 
 #contact a :hover
 {
-    color: #b3b3b3;
+    color: var(--hover-col);
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -117,6 +149,6 @@ article img
 #contact i
 {
     font-size: 2.5em;
-    color: #424242;
+    color: var(--font-col);
     padding-right: 0.2em;
 }
