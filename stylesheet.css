@@ -14,7 +14,7 @@ body
     padding: 2em;
     margin: 0 auto;
     width: 40%;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 #header
@@ -62,7 +62,7 @@ body
 
 article
 {
-    width: calc(33.33333% - 2.5em);
+    width: calc(33.333333% - 2em);
     display: block;
     text-align: center;
     position: relative;
