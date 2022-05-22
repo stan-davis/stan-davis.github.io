@@ -25,6 +25,7 @@ body
 #dark-mode-toggle
 {
     float: right;
+    margin-top: 0.5em;
 }
 
 #wrapper
