@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+body
+{
+    margin: 2.5em;
+}
+
+#wrapper
+{
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+    background-color: #ececec;
+    border-radius: 0.5em;
+    padding: 2em;
+    margin: 0 auto;
+    width: 40%;
+    min-width: 450px;
+}
+
+#header
+{
+    display: inline-block;
+}
+
+#links
+{
+    border-top: 1px solid;
+    border-color: #b3b3b3;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#links a
+{
+    color: #424242;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 0.2em;
+}
+
+#links a:hover
+{
+    color: #b3b3b3;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+#portfolio
+{
+    border-top: 1px solid;
+    border-color: #b3b3b3;
+}
+
+#article-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article
+{
+    width: calc(33.33333% - 2.5em);
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 0.8em;
+}
+
+#article-container a
+{
+    color: #424242;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#article-container a:hover
+{
+    color: #b3b3b3;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+article img 
+{
+    width: 100%;
+    border-radius: 0.8em;
+}
+
+#contact
+{
+    border-top: 1px solid;
+    border-color: #b3b3b3;
+}
+
+#contact img
+{
+    width: 50%;
+    border-radius: 0.8em;
+}
+
+#contact a :hover
+{
+    color: #b3b3b3;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+#contact i
+{
+    font-size: 2.5em;
+    color: #424242;
+    padding-right: 0.2em;
+}
