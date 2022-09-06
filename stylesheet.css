@@ -3,17 +3,17 @@
 :root
 {
     --body-col: #ffffff;
-    --bg-col: #ececec;
-    --font-col: #424242;
-    --hover-col: #b3b3b3;
+    --bg-col: #eeeeee;
+    --font-col: #242424;
+    --hover-col: #535353;
 }
 
 .dark-mode
 {
-    --body-col: #0f0f0f;
-    --bg-col: #1f1f1f;
+    --body-col: #121212;
+    --bg-col: #242424;
     --font-col: #eeeeee;
-    --hover-col: #a3a3a3;
+    --hover-col: #BABABA;
 }
 
 body
@@ -95,11 +95,30 @@ body
 
 article
 {
-    width: calc(33.333333% - 2em);
+    width: calc(33.3% - 2em);
     display: block;
     text-align: center;
     position: relative;
     padding: 0.8em;
+}
+
+@media screen and (max-width: 1500px) {
+    #wrapper
+    {
+        width: 50%;
+    }
+    
+    article
+    {
+        width: calc(50% - 2em);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    article
+    {
+        width: calc(100% - 2em);
+    }
 }
 
 #article-container a
