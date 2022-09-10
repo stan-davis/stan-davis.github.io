@@ -144,6 +144,16 @@ article img
     border-radius: 0.8em;
 }
 
+article img:hover
+{
+    opacity: 0.7;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
 #contact
 {
     border-top: 1px solid;
