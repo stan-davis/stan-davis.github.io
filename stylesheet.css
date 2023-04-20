@@ -6,6 +6,7 @@
     --bg-col: #eeeeee;
     --font-col: #242424;
     --hover-col: #535353;
+    --transition-time: 0.2s;
 }
 
 .dark-mode
@@ -16,10 +17,16 @@
     --hover-col: #BABABA;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: var(--body-col);
     margin: 2.5em;
+    transition: background-color var(--transition-time);
 }
 
 #dark-mode-toggle
@@ -38,6 +45,8 @@ body
     margin: 0 auto;
     width: 40%;
     min-width: 290px;
+
+    transition: background-color var(--transition-time);
 }
 
 #header a
