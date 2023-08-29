@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan');
 
 :root
 {
@@ -6,7 +6,7 @@
     --bg-col: #eeeeee;
     --font-col: #242424;
     --hover-col: #535353;
-    --transition-time: 0.2s;
+    --transition-time: 0.35s;
 }
 
 .dark-mode
@@ -17,156 +17,132 @@
     --hover-col: #BABABA;
 }
 
+@font-face
+{
+    font-family: 'League Spartan Variable';
+    src: url('includes/LeagueSpartan-VF.woff2') format('woff2-variations');
+    font-variation-settings: "wght" 200, 900;
+}
+
 html
 {
     scroll-behavior: smooth;
+    font-family: 'League Spartan Variable', sans-serif;
 }
 
 body
 {
     background-color: var(--body-col);
-    margin: 2.5em;
+    margin: 1.0em;
+    transition: background-color var(--transition-time);
+}
+
+#wrapper
+{
+    color: var(--font-col);
+    padding: 0.5em;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 700px;
     transition: background-color var(--transition-time);
 }
 
 #dark-mode-toggle
 {
-    float: right;
-    margin-top: 0.5em;
+    display: inherit;
 }
 
-#wrapper
-{
-    font-family: 'Roboto', sans-serif;
-    color: var(--font-col);
-    background-color: var(--bg-col);
-    border-radius: 0.5em;
-    padding: 2em;
-    margin: 0 auto;
-    width: 50%;
-    min-width: 290px;
-
-    transition: background-color var(--transition-time);
-}
-
-#header a
-{
-    color: var(--font-col);
-}
-
-#header a:hover
-{
-    color: var(--hover-col);
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-}
-
-#links
-{
-    border-top: 1px solid;
-    border-color: var(--hover-col);
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-#links a
+a
 {
     color: var(--font-col);
     font-weight: bold;
     text-decoration: none;
-    padding-right: 0.2em;
 }
 
-#links a:hover
+a:hover
 {
     color: var(--hover-col);
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    transition: var(--transition-time);
 }
 
-#portfolio
+h1
 {
-    border-top: 1px solid;
-    border-color: var(--hover-col);
+    font-size: 48px;
+}
+
+#header
+{
+    margin-bottom: 4.5em;
+    font-variation-settings: "wght" 600;
+}
+
+#header h1
+{
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-variation-settings: inherit;
+}
+
+#nav-menu ul
+{
+    float: right;
+    position: relative;
+}
+
+#nav-menu li
+{
+    display: inline-block;
+    margin-left: 2.5em;
+}
+
+#showcase
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.showcase-video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #article-container
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 article
 {
-    width: calc(33.3% - 2em);
-    display: block;
-    text-align: center;
     position: relative;
-    padding: 0.8em;
-}
-
-@media screen and (max-width: 1500px) {
-    #wrapper
-    {
-        width: 50%;
-    }
-    
-    article
-    {
-        width: calc(50% - 2em);
-    }
-}
-
-@media screen and (max-width: 900px) {
-    article
-    {
-        width: calc(100% - 2em);
-    }
-}
-
-#article-container a
-{
-    color: var(--font-col);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#article-container a:hover
-{
-    color: var(--hover-col);
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    text-align: center;
 }
 
 article img 
 {
+    object-fit: cover;
     width: 100%;
-    border-radius: 0.8em;
 }
 
 article img:hover
 {
     opacity: 0.7;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    transition: var(--transition-time);
 }
 
 #contact
 {
-    border-top: 1px solid;
-    border-color: var(--hover-col);
+    padding-top: 1em;
 }
 
 #contact img
@@ -175,19 +151,27 @@ article img:hover
     border-radius: 0.8em;
 }
 
-#contact a :hover
+#contact ul
 {
-    color: var(--hover-col);
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    padding: 0;
+    list-style-type: circle;
 }
 
-#contact i
+#footer
+{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#footer i
 {
     font-size: 2.5em;
     color: var(--font-col);
     padding-right: 0.2em;
+}
+
+#footer i:hover
+{
+    color: var(--hover-col);
+    transition: var(--transition-time);
 }
