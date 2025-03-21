@@ -1,107 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <script src="https://kit.fontawesome.com/b46dfabbbc.js" crossorigin="anonymous"></script>
-    <title>Stanley Davis - Games Programmer</title>
-</head>
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <a href="/"><h1>STANLEY DAVIS</h1></a>
-            <div id="nav-menu">
-                <ul>
-                    <li><a href="/">PORTFOLIO</a></li>
-                    <li><a href="includes/Stanley_Davis_CV.pdf" target="_blank">CV</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="#" id="dark-mode-toggle"><i class="fas fa-adjust"></i></a></li>
-                </ul>
+    <head>
+        <meta name="description" content="Stanley Davis's Portfolio">
+        <title>Stan</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="x-icon" href="images/favicon.png">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Stan">
+        <meta property="og:site_name" content="Stanley Davis's Portfolio">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="bio">
+                    <img src="images/me.jpg" alt="standavisdev"/>
+                    <h1>Stanley Davis</h1>
+                </div>
+                <div class="nav">
+                    <h3>About</h3>
+                    <ul>
+                        <li>💼 ThePolygonLoft</li>
+                        <li>🧑 25</li>
+                        <li>🇬🇧 Bristol</li>
+                        
+                    </ul>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a target="_blank" href="mailto:hello@standavis.dev">📧 Email</a></li>
+                        <li><a target="_blank" href="Stanley_Davis_CV.pdf">📜 CV</a></li>
+                        <li><a target="_blank" href="https://stan-davis.itch.io">🎮 itch.io</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/stan-davis/">🏢 LinkedIn</a></li>
+                        <li><a target="_blank" href="https://github.com/stan-davis">🤖 GitHub</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
-        <div id="showcase">
-            <iframe class="showcase-video" src="https://www.youtube.com/embed/4US5YS9uumI?si=8gM3O5i0hugbpwWK" frameborder="0" allowfullscreen></iframe>
-        </div>
+            <div class="content">
+                <h2>Portfolio</h2>
+                <h3>Commercial Games</h3>
+                <div class="article">
+                    <a href="https://store.steampowered.com/app/3179050/Piece_by_Piece/" target="_blank"><img src="images/piecebypiece.jpg"/></a>
+                    <div>
+                        <h3>Piece by Piece</h3>
+                        <p>Piece by Piece is a cozy game where you repair broken items for cute forest animals! I was responsible for programming various systems throughout the game, primarily working with UI, as well as handling animations, writing shaders, and adding story-related content.</p>
+                        <p>Coming soon to <a href="https://store.steampowered.com/app/3179050/Piece_by_Piece/" target="_blank">Steam!</a></p>
+                    </div>
+                </div>   
 
-        <h3>Game Jams & Projects</h3>
-            <div id="article-container">
-				<article>
+                <h3>Personal Projects</h3>
+				<div class="article">
                     <a href="https://stan-davis.itch.io/seweria" target="_blank"><img src="images/seweria.jpg"/></a>
-                    <h3>Seweria</h3>
-                    <p>A short and simple roguelite about escaping the sewers! A project developed with <a href="https://rouniya.github.io/" target="_blank">Weronika Jaworska</a> created in the Godot Engine. I was the main programmer, composer, and sound designer, and assisted in the art and animation.</p>
-                </article>   
-                
-				<article>
+                    <div>
+                        <h3>Seweria</h3>
+                        <p>A short and simple roguelite about escaping the sewers! A project developed with <a href="https://rouniya.github.io/" target="_blank">Weronika Jaworska</a> created in the Godot Engine. I was the main programmer, composer, and sound designer, and assisted in the art and animation.</p>
+                    </div>
+                </div>   
+
+				<div class="article">
                     <a href="https://stan-davis.itch.io/the-car-park" target="_blank"><img src="images/the_car_park.jpg"/></a>
+                    <div>
                     <h3>The Car Park</h3>
                     <p>A short horror game set in a strange car park. A solo project made within 72 hours for the <a href="https://ldjam.com/events/ludum-dare/54/games" target="_blank">Ludum Dare 54 Game Jam.</a></p>
-                </article>
+                    </div>
+                </div>
 
-				<article>
+				<div class="article">
                     <a href="https://globalgamejam.org/2022/games/split-crawler-5" target="_blank"><img src="images/SplitCrawler.png"/></a>
-                    <h3>Split Crawler</h3>
-                    <p>A short puzzle game developed by a small team for the <a href="https://globalgamejam.org/2022/games" target="_blank">2022 Global Game Jam</a>. I was responsible for developing the game concept, player movement, 3D modelling, composition, and sound design.</p>
-                </article>
+                    <div>    
+                        <h3>Split Crawler</h3>
+                        <p>A short puzzle game developed by a small team for the <a href="https://globalgamejam.org/2022/games" target="_blank">2022 Global Game Jam</a>. I was responsible for developing the game concept, player movement, 3D modelling, composition, and sound design.</p>
+                    </div>
+                </div>
 
-                <article>
+                <div class="article">
                     <a href="https://github.com/stan-davis/FallingSand" target="_blank"><img src="images/fallingsandsim.jpg"/></a>
-                    <h3>Falling Sand</h3>
-                    <p>A falling-sand simulation written in C++ using SDL2, which implements a falling-sand style of cellular automata with physics provided by Box2D. It also has a graphical interface using ImGUI and basic terrain generation with FastNoiseLite. Inspired by <a href="https://noitagame.com" target="_blank">Noita</a></p>
-                </article>
-            </div>
-        <h3>UWE - Games Technology</h3>
-            <div id="article-container">
-                <article>
+                    <div>
+                        <h3>Falling Sand</h3>
+                        <p>A falling-sand simulation written in C++ using SDL2, which implements a falling-sand style of cellular automata with physics provided by Box2D. It also has a graphical interface using ImGUI and basic terrain generation with FastNoiseLite. Inspired by <a href="https://noitagame.com" target="_blank">Noita</a></p>
+                    </div>
+                </div>
+
+                <h3>UWE - Games Technology</h3>
+                <div class="article">
                     <a href="https://www.youtube.com/watch?v=uh-zHIrufbY" target="_blank"><img src="images/KojimaWars.jpg"/></a>
-                    <h3>Kojima Wars</h3>
-                    <p>A team-based, online multiplayer FPS developed by a large team in Unity. 
-                        I was responsible for the sourcing, creation and implementation of 
-                        audio within the game using FMOD and C#.</p>
-                </article>
+                    <div>
+                        <h3>Kojima Wars</h3>
+                        <p>A team-based, online multiplayer FPS developed by a large team in Unity. 
+                            I was responsible for the sourcing, creation and implementation of 
+                            audio within the game using FMOD and C#.</p>
+                    </div>
+                </div>
 
-                <article>
+                <div class="article">
                     <a href="https://github.com/stan-davis/voxel-optimisation" target="_blank"><img src="images/voxels.png"/></a>
-                    <h3>Exploring Voxel Optimisation</h3>
-                    <p>A basic voxel engine built in Unity to be used for observing various optimisation techniques for voxel environments.</p>
-                </article>
+                    <div>
+                        <h3>Exploring Voxel Optimisation</h3>
+                        <p>A basic voxel engine built in Unity to be used for observing various optimisation techniques for voxel environments.</p>
+                    </div>
+                </div>
 
-                <article>
+                <div class="article">
                     <a href="https://github.com/stan-davis/DX11-Engine-FPS" target="_blank"><img src="images/DXFPS.png"/></a>
-                    <h3>DirectX FPS</h3>
-                    <p>A simple retro-style FPS developed using DirectX11 and written in C++.</p>
-                </article>
-                
-		        <article>
-                    <img src="images/SHMUPMaker.jpg"/>
-                    <h3>Super SHMUP Maker</h3>
-                    <p>A DirectX game engine written in C++ and developed by a small team. To be used by game designers for the creation of Shoot-Em-Up style games.</p>
-                </article>
-		
-                <article>
-                    <img src="images/TopDownShooter.jpg"/>
-                    <h3>Infiltrate</h3>
-                    <p>A co-op, top-down shooter written in C++ and developed by a small team. I was responsible for writing a parser to parse level data from the <a href="https://www.mapeditor.org">Tiled map editor</a>.</p>
-                </article>		
-    
-                <article>
-                    <a href="https://github.com/stan-davis/Blocky-Unity" target="_blank"><img src="images/Blocky.jpg"/></a>
-                    <h3>Blocky</h3>
-                    <p>A Minecraft clone created in Unity and Godot and the core inspiration for my <a href="https://github.com/stan-davis/voxel-optimisation" target="_blank"> voxel optimisation project.</a></p>
-                </article>         
-            </div>
+                    <div>
+                        <h3>DirectX FPS</h3>
+                        <p>A simple retro-style FPS developed using DirectX11 and written in C++.</p>
+                    </div>
+                </div>
 
-            <div id="footer">
-                <a href="mailto:hello@standavis.dev"><i class="fa-solid fa-square-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/stan-davis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/standavisdev/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                <a href="https://github.com/stan-davis/" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                <a href="https://stan-davis.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+		        <div class="article">
+                    <img src="images/SHMUPMaker.jpg"/>
+                    <div>
+                        <h3>Super SHMUP Maker</h3>
+                        <p>A DirectX game engine written in C++ and developed by a small team. To be used by game designers for the creation of Shoot-Em-Up style games.</p>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <img src="images/TopDownShooter.jpg"/>
+                    <div>
+                        <h3>Infiltrate</h3>
+                        <p>A co-op, top-down shooter written in C++ and developed by a small team. I was responsible for writing a parser to parse level data from the <a href="https://www.mapeditor.org">Tiled map editor</a>.</p>
+                    </div>
+                </div>		
+
+                <div class="article">
+                    <a href="https://github.com/stan-davis/Blocky-Unity" target="_blank"><img src="images/Blocky.jpg"/></a>
+                    <div>
+                        <h3>Blocky</h3>
+                        <p>A Minecraft clone created in Unity and Godot and the core inspiration for my <a href="https://github.com/stan-davis/voxel-optimisation" target="_blank"> voxel optimisation project.</a></p>
+                    </div>
+                </div>
+                       
             </div>
         </div>
-    <script src="darkmode.js"></script>
-</body>
-</html>
+    </body>
+</html> 
