@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentIndex = 1;
 let slides = document.getElementsByClassName("slide");
 let buttons = document.getElementsByClassName("btn");
 
