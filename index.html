@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Stanley Davis</title>
     <link rel="icon" type="x-icon" href="images/favicon.png">
+    <script src="js/carousel.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -19,7 +20,24 @@
         </ul>
     </div>
     <div class="wrapper">
-        <!--Showcase TBA-->
+        <!--Showcase-->
+        <div class="showcase">
+            <div class="slide">
+                <video autoplay loop>
+                    <source src="assets/media/pbp.webm" type="video/webm"/>
+                </video>
+            </div>
+
+            <div class="slide">
+                <img src="assets/images/oscar_screen.jpg">
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <span class="btn" onclick="setSlide(0)"></span>
+            <span class="btn" onclick="setSlide(1)"></span>
+        </div>
+
         <!--Articles-->
         <h2>Commercial Games</h2>
         <div class="articles">
