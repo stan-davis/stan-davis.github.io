@@ -2,8 +2,10 @@
 
 :root 
 {
-    --accent-color: #ff4040;
-    --text-primary: #000000;
+    --accent-color: #fffb00;
+    --text-primary: #ffffff;
+    --background-color: #1a1a1f;
+    --header-color: #16161b;
 }
 
 html
@@ -16,7 +18,7 @@ html
 
 body 
 {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     color: var(--text-primary);
     margin: 0;
 }
@@ -34,6 +36,19 @@ a:hover
     transition: 0.1s ease-in-out;
 }
 
+img
+{
+    border-radius: 2px;
+}
+
+.header a.current
+{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    padding: 0.2em;
+    border-radius: 2px;
+}
+
 li
 {
     list-style: none;
@@ -41,20 +56,17 @@ li
 
 .header
 {
-    background-color: #000000ef;
+    background-color: var(--header-color);
     color: #ffffff;
-    position: sticky;
-    display: grid;
-    grid-template-columns: auto auto;
+    text-align: center;
     top: 0px;
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 0 1.5rem 0;
     z-index: 1;
 }
 
 .header ul
 {
     font-size: 1.5em;
-    text-align: end;
     margin: 1rem 0 0 0;
     padding: 0;
 }
@@ -63,6 +75,24 @@ li
 {
     display: inline-block;
     margin-right: 1rem;
+}
+
+.links ul
+{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.links li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.links a:hover
+{
+    opacity: 0.7;
 }
 
 .contact ul
@@ -79,15 +109,15 @@ li
 
 .footer
 {
-    background-color: #000000ef;
-    color: #ffffff;
+    background-color: var(--header-color);
+    color: var(--text-primary);
     text-align: center;
     padding: 0.5rem 0 1rem 0;
 }
 
 .wrapper
 {
-    width: 60%;
+    width: 900px;
     margin: auto;
 }
 
@@ -108,14 +138,17 @@ article
     margin: 0 1em 1em 0;
 }
 
-article a:hover
+article img:hover
 {
-    opacity: 0.7;
-    transition: 0.1s ease-in-out;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--accent-color);
 }
 
 article img
 {
+    margin: 1px;
     width: 100%;
 }
 
@@ -139,7 +172,6 @@ article img
 {
     width: 100%;
     height: 100%;
-    border-radius: 2em;
 }
 
 .slide video
