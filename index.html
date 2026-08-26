@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Stan Davis</title>
     <link rel="icon" href="assets/images/favicon.png">
-    <script src="js/carousel.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -22,96 +21,113 @@
     <div class="wrapper">
         <!--Showcase-->
         <div class="showcase">
-            <div class="slide">
-                <img src="assets/images/pbp_screen.jpg">
-                <div class="text">Piece By Piece</div>
-            </div>
-
-            <div class="slide">
-                <img src="assets/images/oscar_screen.jpg">
-                <div class="text">Oscar</div>
-            </div>
-        </div>
-
-        <div class="btn-container">
-            <span class="btn" onclick="setSlide(0)"></span>
-            <span class="btn" onclick="setSlide(1)"></span>
+        <span class="info">
+            <div class="content">Piece By Piece</div>
+            <a class="content" href="https://store.steampowered.com/app/3179050/Piece_by_Piece/" target="_blank">Available On Steam!</a>
+        </span>
+        <img src="assets/images/PBP.webp">
         </div>
 
         <!--Articles-->
-        <h2>Commercial Games</h2>
+        <h2>Professional Projects</h2>
         <div class="articles">
-            <article>
-                <a href="https://store.steampowered.com/app/3179050/Piece_by_Piece/" target="_blank"><img src="assets/images/piecebypiece.jpg"/></a>
-                <h3>Piece By Piece</h3>
-                <p>A cozy game where you repair broken items for cute forest animals! Responsible for implementing various gameplay, UI, input handling, animation, shaders, VFX, optimisation, and adding story-related content.</p>
-            </article>
-            <article>
+            <a href="https://store.steampowered.com/app/3179050/Piece_by_Piece/" target="_blank">    
+                <span class="info">
+                    <h3>Piece By Piece</h3>
+                    <p class="desc">A cozy game where you repair broken items for cute forest animals! Responsible for implementing various gameplay, UI, input handling, animation, shaders, VFX, optimisation, and adding story-related content.</p>
+                </span>
+                <img src="assets/images/piecebypiece.jpg"/>
+            </a>
+            <a href = "" target="blank">
+                <span class="info">
+                    <h3>TBA</h3>
+                    <p class="desc">A project ported from ActionScript to Unity in C#. Implemented character movement, collision detection and resolution, input handling and management, and tools used to speed up development.</p>
+                </span>
                 <img src="assets/images/unknown.jpg"/>
-                <h3>TBA</h3>
-                <p>A project ported from ActionScript to Unity in C#. Implemented character movement, collision detection and resolution, input handling and management, and tools used to speed up development.</p>
-            </article>
+            </a>
         </div>
         <h2>Personal Projects</h2>
         <div class="articles">
-            <article>
-                <a href="https://globalgamejam.org/games/2026/untitled-game-wip-3" target="_blank"><img src="assets/images/oscar.jpg"/></a>
-                <h3>Oscar</h3>
-                <p>A spooky platformer about a boy looking for his mum. Find out how uncovering true feelings can bring you home. A project developed with Weronika Jaworska in the Godot Engine for the Global Game Jam 2026.</p>
-            </article>
-            <article>
-                <a href="https://github.com/stan-davis/FallingSand" target="_blank"><img src="assets/images/fallingsand.jpg"/></a>
-                <h3>Falling Sand</h3>
-                <p>A solo project written in C++ using SDL2, which implements a falling-sand style of cellular automata with physics provided by Box2D. It includes a graphical interface with Dear ImGUI and basic terrain generation utilising FastNoiseLite.</p>
-            </article>
-            <article>
-                <a href="https://stan-davis.itch.io/the-car-park" target="_blank"><img src="assets/images/thecarpark.jpg"/></a>
-                <h3>The Car Park</h3>
-                <p>A horror game set in a strange car park. A solo project made within 72 hours for the Ludum Dare 54 Game Jam.</p>
-            </article>
-            <article>
-                <a href="https://stan-davis.itch.io/seweria" target="_blank"><img src="assets/images/seweria.jpg"/></a>
-                <h3>Seweria</h3>
-                <p>A rogue-lite about escaping the sewers! A project developed with Weronika Jaworska in the Godot Engine. Responsible for programming, composition, sound design, and assisted with the art and animation.</p>
-            </article>
-            <article>
-                <a href="https://globalgamejam.org/2022/games/split-crawler-5" target="_blank"><img src="assets/images/splitcrawler.png"/></a>
-                <h3>Split Crawler</h3>
-                <p>A puzzle game developed by a small team for the Global Game Jam 2022. Responsible for developing the game concept, implementing movement, 3D modelling, composition, and sound design.</p>
-            </article>
+            <a href="https://globalgamejam.org/games/2026/untitled-game-wip-3" target="_blank">
+                <span class="info">
+                    <h3>Oscar</h3>
+                    <p class="desc">A spooky platformer about a boy looking for his mum. Find out how uncovering true feelings can bring you home. A project developed with Weronika Jaworska in the Godot Engine for the Global Game Jam 2026.</p>
+                </span>
+                <img src="assets/images/oscar.jpg"/>
+            </a>
+            <a href="https://github.com/stan-davis/FallingSand" target="_blank">
+                <span class="info">
+                    <h3>Falling Sand</h3>
+                    <p class="desc">A solo project written in C++ using SDL2, which implements a falling-sand style of cellular automata with physics provided by Box2D. It includes a graphical interface with Dear ImGUI and basic terrain generation utilising FastNoiseLite.</p>
+                </span>
+                <img src="assets/images/fallingsand.jpg"/>
+            </a>
+            <a href="https://stan-davis.itch.io/the-car-park" target="_blank">
+                <span class="info">
+                    <h3>The Car Park</h3>
+                    <p class="desc">A horror game set in a strange car park. A solo project made within 72 hours for the Ludum Dare 54 Game Jam.</p>
+                </span>
+                <img src="assets/images/thecarpark.jpg"/>
+            </a>
+            <a href="https://stan-davis.itch.io/seweria" target="_blank">
+                <span class="info">
+                    <h3>Seweria</h3>
+                    <p class="desc">A rogue-lite about escaping the sewers! A project developed with Weronika Jaworska in the Godot Engine. Responsible for programming, composition, sound design, and assisted with the art and animation.</p>
+                </span>
+                <img src="assets/images/seweria.jpg"/>
+            </a>
+            <a href="https://globalgamejam.org/2022/games/split-crawler-5" target="_blank">
+                <span class="info">
+                    <h3>Split Crawler</h3>
+                    <p class="desc">A puzzle game developed by a small team for the Global Game Jam 2022. Responsible for developing the game concept, implementing movement, 3D modelling, composition, and sound design.</p>
+                </span>
+                <img src="assets/images/splitcrawler.png"/>
+            </a>
         </div>
         <h2>UWE - Games Technology</h2>
         <div class="articles">
-            <article>
+            <a href = "" target="blank">
+                <span class="info">
+                    <h3>Kojima Wars</h3>
+                    <p class="desc">A team-based, online multiplayer FPS developed by a large team in Unity. Responsible for sourcing, designing and implementating audio using FMOD and C#.</p>
+                </span>
                 <img src="assets/images/kojima-wars.jpg"/>
-                <h3>Kojima Wars</h3>
-                <p>A team-based, online multiplayer FPS developed by a large team in Unity. Responsible for sourcing, designing and implementating audio using FMOD and C#.</p>
-            </article>
-            <article>
-                <a href="https://github.com/stan-davis/voxel-optimisation" target="_blank"><img src="assets/images/voxels.png"/></a>
-                <h3>Exploring Voxel Optimisation</h3>
-                <p>A voxel engine built in Unity used for observing various voxel optimisation techniques.</p>
-            </article>
-            <article>
-                <a href="https://github.com/stan-davis/DX11-Engine-FPS" target="_blank"><img src="assets/images/dxfps.png"/></a>
-                <h3>DirectX FPS</h3>
-                <p>A retro-style FPS written in C++ using DirectX 11.</p>
-            </article>
-            <article>
+            </a>
+            <a href="https://github.com/stan-davis/voxel-optimisation" target="_blank">
+                <span class="info">
+                    <h3>Exploring Voxel Optimisation</h3>
+                    <p class="desc">A voxel engine built in Unity used for observing various voxel optimisation techniques.</p>
+                </span>
+                <img src="assets/images/voxels.png"/>
+            </a>
+            <a href="https://github.com/stan-davis/DX11-Engine-FPS" target="_blank">
+                <span class="info">
+                    <h3>DirectX FPS</h3>
+                    <p class="desc">A retro-style FPS written in C++ using DirectX 11.</p>
+                </span>
+                <img src="assets/images/dxfps.png"/>
+            </a>
+            <a href = "" target="blank">
+                <span class="info">
+                    <h3>Super SHMUP Maker</h3>
+                    <p class="desc">A SHMUP game engine written in C++ using DirectX 11 and developed by a small team. Responsible for writing the parser used to store level data.</p>
+                </span>
                 <img src="assets/images/shmupmaker.jpg"/>
-                <h3>Super SHMUP Maker</h3>
-                <p>A SHMUP game engine written in C++ using DirectX 11 and developed by a small team. Responsible for writing the parser used to store level data.</p>
-            </article>
-            <article>
+            </a>
+            <a href = "" target="blank">
+                <span class="info">
+                    <h3>Infiltrate</h3>
+                    <p class="desc">A co-op, top-down shooter written in C++ and developed by a small team. Responsible for writing the parser to process level data from the Tiled map editor.</p>
+                </span>
                 <img src="assets/images/topdownshooter.jpg"/>
-                <h3>Infiltrate</h3>
-                <p>A co-op, top-down shooter written in C++ and developed by a small team. Responsible for writing the parser to process level data from the Tiled map editor.</p>
-            </article>
-            <article>
-                <a href="https://github.com/stan-davis/Blocky-Unity" target="_blank"><img src="assets/images/blocky.jpg"/></a>
-                <h3>Blocky</h3>
-                <p>A Minecraft clone created in Unity, and the inspiration for my voxel optimisation project.</p>
-            </article>
+            </a>
+            <a href="https://github.com/stan-davis/Blocky-Unity" target="_blank">
+                <span class="info">
+                    <h3>Blocky</h3>
+                    <p class="desc">A Minecraft clone created in Unity, and the inspiration for my voxel optimisation project.</p>
+                </span>
+                <img src="assets/images/blocky.jpg"/>
+            </a>
         </div>
         </div>
     </div>
