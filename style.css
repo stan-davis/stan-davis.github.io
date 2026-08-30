@@ -72,6 +72,19 @@ li {
     margin: 0 0 0 0;
 }
 
+.footer ul {
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+.footer svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 .1em 0 .1em;
+    padding: 0;
+}
+
 .footer {
     background-color: var(--header-color);
     box-shadow: 0 50vh 0 50vh var(--header-color);
